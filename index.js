@@ -5,7 +5,6 @@ const port = 5000;
 // Use express router
 app.use("/", require("./routes"));
 
-const mysql = require("./config/mySql");
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
