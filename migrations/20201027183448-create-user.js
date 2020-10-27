@@ -12,12 +12,12 @@ module.exports = {
             type: Sequelize.STRING,
             allowNull: false,
          },
-         PanCard: {
+         panCard: {
             type: Sequelize.STRING,
             allowNull: false,
          },
          DOB: {
-            type: Sequelize.DATE,
+            type: Sequelize.STRING,
             allowNull: false,
          },
          gender: {
