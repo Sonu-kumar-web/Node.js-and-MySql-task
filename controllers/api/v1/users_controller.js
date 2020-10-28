@@ -19,6 +19,21 @@ module.exports.users = async (req, res) => {
    }
 };
 
+module.exports.currentUser = (req, res) => {
+   try {
+      let users = req.userData;
+      return res.status(200).json({
+         data: users,
+      });
+   } catch (err) {
+      console.log("Error", err);
+      return res.status(500).json({
+         message: "Internal server error",
+         error: err,
+      });
+   }
+};
+
 // Insert data into table
 // @ api/v1/user/insert
 module.exports.insert = async (req, res) => {
@@ -51,7 +66,7 @@ module.exports.insert = async (req, res) => {
             jwt.sign(data, "tricog", (err, token) => {
                return res.status(200).json({
                   message:
-                     "User successfully logged in please keep the token safe",
+                     "User successfully logged in please keep the token safe for another requests",
                   token: token,
                });
             });
