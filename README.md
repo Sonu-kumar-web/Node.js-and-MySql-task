@@ -12,13 +12,12 @@
 3. **Fetch detail about current user:** `[GET]: /api/v1/user`
 
 #### Example to send data inside body (using Postman)
-`{
-    "firstName": "Sonu Kumar",
-    "panCard": "BNZAA2318j",
-    "DOB": "1996-11-11",
-    "gender": "Male",
-    "email": "sonu5@gamil.com",
-    "profileImage": "https://www.tricog.com/"
-}
-`
+`{`<br>
+    `"firstName": "Sonu Kumar",`<br>
+    `"panCard": "BNZAA2318j",`<br>
+    `"DOB": "1996-11-11",`<br>
+    `"gender": "Male",`<br>
+    `"email": "sonu5@gamil.com",`<br>
+    `"profileImage": "https://www.tricog.com/"`<br>
+`}`
 
