@@ -6,6 +6,10 @@
 3. Run `npm start` to ignite the project.
 5. Use **Postman** to test the api.
 
+#### Before inserting data into database make some changes in your code
+1. Go to config folder, inside that open `config.json` and inside development mode change "username" and "password"  according to your `phpmyadmin` or `mysql` "username" and "password".
+2. Go to terminal (inside Tricog) and run `sequelize db:migrate`  to create a table schema into database.
+
 #### Routes
 1. **Insert User details/Login:** `[POST]: /api/v1/user/insert`
 2. **Fetch detail about all users:** `[GET]: /api/v1/user/all-users`
